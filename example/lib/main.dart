@@ -51,9 +51,9 @@ class _MyAppState extends State<MyApp> {
                         await getApplicationDocumentsDirectory();
                     print('$appDocDir');
 
-                    String iosBookPath = '${appDocDir.path}/chair.epub';
+                    String iosBookPath = '${appDocDir.path}/dicar.epub';
                     print(iosBookPath);
-                    String androidBookPath = 'file:///android_asset/3.epub';
+                    String androidBookPath = 'file:///android_asset/dicar.epub';
                     EpubViewer.setConfig(
                         themeColor: Theme.of(context).primaryColor,
                         identifier: "iosBook",
@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
 //                    );
 
                     await EpubViewer.openAsset(
-                      'assets/4.epub',
+                      'assets/dicar.epub',
                       lastLocation: EpubLocator.fromJson({
                         "bookId": "2239",
                         "href": "/OEBPS/ch06.xhtml",
@@ -115,7 +115,7 @@ class _MyAppState extends State<MyApp> {
         ? await getExternalStorageDirectory()
         : await getApplicationDocumentsDirectory();
 
-    String path = appDocDir!.path + '/chair.epub';
+    String path = appDocDir!.path + '/dicar.epub';
     File file = File(path);
 //    await file.delete();
 
