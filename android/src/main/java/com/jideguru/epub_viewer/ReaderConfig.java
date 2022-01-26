@@ -20,8 +20,8 @@ public class ReaderConfig {
     public ReaderConfig(Context context, String identifier, String themeColor,
                         String scrollDirection, boolean allowSharing, boolean showTts , boolean nightMode){
 
-//        config = AppUtil.getSavedConfig(context);
-//        if (config == null)
+        config = AppUtil.getSavedConfig(context);
+        if (config == null)
             config = new Config();
         if (scrollDirection.equals("vertical")){
             config.setAllowedDirection(Config.AllowedDirection.ONLY_VERTICAL);
