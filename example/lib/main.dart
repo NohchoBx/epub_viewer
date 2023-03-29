@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: loading
               ? CircularProgressIndicator()
-              : FlatButton(
+              : ElevatedButton(
                   onPressed: () async {
                     Directory appDocDir =
                         await getApplicationDocumentsDirectory();
